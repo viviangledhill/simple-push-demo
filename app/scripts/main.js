@@ -288,8 +288,8 @@ window.addEventListener('UIReady', function() {
 
   // Check that service workers are supported
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js', {
-      scope: './'
+    navigator.serviceWorker.register('/scripts/service-worker.js', {
+      scope: './scripts/'
     })
     .then(initialiseState);
   } else {
